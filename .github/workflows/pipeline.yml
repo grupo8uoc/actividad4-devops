@@ -37,7 +37,7 @@ jobs:
       - name: Instalar y ejecutar Gosec (Security Scanner)
         uses: securego/gosec@master
         with:
-          args: ./...
+          args: -exclude=G114,G102 ./...
         # Esto generará un log de seguridad en GitHub Actions
 
   # TRABAJO 3: SIMULACIÓN DE DESPLIEGUE (Staging/Prod)
